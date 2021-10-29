@@ -103,4 +103,21 @@ export default {
                 }
     }
 
+    @media all and (max-width: 375px) {
+        .catalogue {
+            max-width: 360px;
+             margin-left: 26px;
+
+                h2 {
+                    font-size: 22px;
+                    line-height: 22px;
+                    margin-bottom: 22px;
+                }
+
+                .catalogueGrouper {
+                    flex-direction: column;
+                }
+    }
+    }
+
 </style>

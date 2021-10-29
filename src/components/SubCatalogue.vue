@@ -22,7 +22,6 @@
                     <div class="button">смотреть гайд</div>
                     <p> {{ item.price }}₽ /мес.</p> 
                 </div>
-    
         </div>
     </div>
 
@@ -76,6 +75,10 @@ export default {
         padding: 0 60px;
         max-width: 620px;
 
+         h2 {
+            margin: 0px;
+        }
+
                 .more {
             text-align: left;
 
@@ -92,7 +95,7 @@ export default {
     
 
     .svgSize {
-        height: 168px;
+        min-height: 168px;
 
             .svgList {
                 display: flex;
@@ -134,7 +137,7 @@ export default {
             .button {
                 padding: 18px 40px 20px;
                 border: 1px solid black;
-                border-radius: 10px;
+                border-radius: 5px;
                 font-size: 12px;
                 line-height: 12px;
                 color: #000000;
@@ -143,4 +146,95 @@ export default {
         
     }
 }
+
+@media all and (max-width: 375px) {
+       .SubCatalogue {
+    max-width: 323px; 
+    border-radius: 10px;
+    margin-bottom: 32px;
+    padding-bottom: 22px;
+
+    .mainImg img {
+        max-width: 323px; 
+    }
+
+        .guideType {
+            top: 22px;
+            left: 22px;
+            padding: 6px 12px;
+            width: 88px;
+            line-height: 14px;
+            font-size: 12px;
+        }
+
+    .wrapper { 
+        padding: 22px 26px 0px;
+        max-width: 620px;
+
+                .more {
+
+                > p {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+    }
+
+    
+
+    .svgSize {
+        min-height: 0px;
+
+            .svgList {
+                align-items: center;
+
+                p {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+
+            img {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    
+    h2 {
+        margin-bottom: 12px;
+
+        +p {
+            margin-bottom: 12px;
+            max-width: 279px;
+        }
+    }
+
+    
+    .block_bottom {
+        max-width: 279px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 0px;
+        
+            &:last-child {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 18px;
+                order: 2;
+            }
+
+            .button {
+                min-width: 100%;
+                padding: 18px 0px 20px;
+                border-radius: 5px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 12px;
+                order: 1
+            }
+
+        
+    }
+}
+    }
 </style>
