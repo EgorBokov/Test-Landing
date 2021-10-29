@@ -1,28 +1,58 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MainAdvert msg="Welcome to Your Vue.js App"/>
+    <Advantages />
+    <Guides />
+    <TestGuide />
+    <Catalogue />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainAdvert from './components/MainAdvert.vue'
+import Advantages from './components/Advantages.vue'
+import Guides from './components/Guides'
+import TestGuide from './components/TestGuide'
+import Catalogue from './components/Catalogue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainAdvert,
+    Advantages,
+    Guides,
+    TestGuide,
+    Catalogue,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @font-face {
+      font-family: 'Samsung Sans Regular';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Samsung Sans Regular'), url('./assets/samsungFont/SamsungSans-Regular.woff') format('woff');
+  }
+</style>
+
+<style lang="scss">
+
+body {
+  margin: 0;
+  padding: 0;
+
+  #app {
+    max-width: 1920px;
+    margin: 0px auto;
+    font-family: 'Samsung Sans Regular';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
 }
+
+
 </style>
