@@ -32,10 +32,6 @@ export default {
 
       .content {
           margin-top: 149px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
 
             h1 {
                 font-weight: bold;
@@ -44,6 +40,7 @@ export default {
                 text-align: center;
                 max-width: 600px;
                 height: 90px;
+                margin: 0 auto;
                 margin-bottom: 22px;
               }
 
@@ -53,18 +50,20 @@ export default {
                 font-size: 17px;
                 line-height: 24px;
                 text-align: center;
+                margin: 0 auto;
                 margin-bottom: 32px;
               }
 
             .button {
-                padding: 18px 47px 20px;
-                max-width: 200px;
+                padding: 18px 0px 20px;
+                margin: 0 auto;
                 font-size: 12px;
                 line-height: 12px;
                 color: #FEFEFE;
+                text-align: center;
                 background: #1D1D20;
                 border-radius: 5px;
-                text-align: center;
+                max-width: 200px;
               }
         }
   }

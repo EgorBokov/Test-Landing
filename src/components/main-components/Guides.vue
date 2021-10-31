@@ -70,7 +70,7 @@ export default {
             max-width: 1291px;
             margin: 0px auto;
             border-radius: 150px 0px 0px 0px;
-            padding: 80px 0px 80px;
+            padding: 80px 0px 0px;
         
 
         h2 {

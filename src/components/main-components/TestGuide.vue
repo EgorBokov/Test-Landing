@@ -67,10 +67,7 @@ export default {
             padding: 110px 0px 100px;
 
             .wrapper {
-                display: flex;
-                flex-direction: column; 
-                align-items: center;
-
+                text-align: center;
 
                 .header-btn {
                     background: #D2D2D2;
@@ -79,21 +76,21 @@ export default {
                     font-size: 14px;
                     line-height: 14px;
                     color: #FEFEFE;
-                    min-width: 123px;
+                    max-width: 123px;
                     padding: 7px 0 9px;
+                    margin: 0 auto;
                     margin-bottom: 32px;
-                    text-align: center;
                 }
 
                  h2 {
-                    margin: 0 0 22px;
+                    margin: 0 auto 22px;
                     font-weight: bold;
                     font-size: 32px;
                     line-height: 32px;
                 }
 
                 p {
-                    margin: 0 0 32px;
+                    margin: 0 auto 32px;
                     font-size: 17px;
                     line-height: 22px;
                 }
@@ -107,9 +104,9 @@ export default {
                     font-size: 12px;
                     line-height: 12px;
                     color: #FEFEFE;
-                    padding: 18px 0 20px;
-                    min-width: 122px;
-                    text-align: center;
+                    margin: 0 auto;
+                    padding: 18px 20px;
+                    max-width: 122px;
                 }
             }
         }

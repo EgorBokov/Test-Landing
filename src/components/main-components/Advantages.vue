@@ -31,7 +31,7 @@ export default {
                 {id: 1, icon: 'actual.svg', title: 'Актуальные образы', text: 'Наш стилист регулярно обновляет гайды, чтобы вы всегда выглядели стильно и актуально'},
                 {id: 2, icon: 'study.svg', title: 'Обучение', text: 'Вы не только пользуетесь готовыми образами, но и учитесь у опытного стилиста искусству стиля'},
                 {id: 3, icon: 'star-main.svg', title: 'Бонусы от Meet-market', text: 'В каждом гайде вы найдете подборку уникальных бонусов'},
-            ]
+            ],
         }
     }
 }
@@ -42,19 +42,14 @@ export default {
 $main-color: #1D1D20;
 
 .wrapper {
+
   margin-top: 80px;
-  display: flex;
-  justify-content: center;
   color: $main-color;
   min-height: 400px;
 
     .main-block {
         max-width: 1291px;
-        margin: 20px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        margin: 20px auto;
 
             h1 {
                 width: 338px;
@@ -64,8 +59,7 @@ $main-color: #1D1D20;
                 font-size: 32px;
                 line-height: 32px;
                 text-align: center;
-                margin-bottom: 22px;
-                margin-top: 0;
+                margin: 0 auto 22px;
             }
 
             p {
@@ -74,6 +68,7 @@ $main-color: #1D1D20;
                 font-size: 17px;
                 line-height: 22px;
                 text-align: center;
+                margin: 0 auto;
                 margin-bottom: 50px;
             }
 
