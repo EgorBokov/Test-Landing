@@ -1,6 +1,6 @@
 <template>
 <div class="guides-wrapper">
-    <div class="guides">
+    <div class="guides-list">
         <h2>Какие образы будут в гайде?</h2>
         <p class="description">Это подборки образов из самых популярных и наиболее сочетаемых товаров, выпущенных в продажу в этом месяце.</p>
         <Guide v-for="guide in guides" :key="guide.guideType" :guide="guide"/>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Guide from "./Guide"
+import Guide from "../sub-components/Guide"
 
 export default {
   name: 'Guides',
@@ -22,7 +22,7 @@ export default {
                   mainPic: 'firstPic',
                   imageryNum: '25+',
                   guideType: 'Макси гайд',
-                  mainImage: 'mainFirst.png',
+                  mainImage: 'main-first.png',
                   svgArray: [
                       {title: 'Закрытый чат со стилистом', path: 'telegram.svg' },
                       {title: 'Фото и видео с лайв-примерок', path: 'camera.svg' },
@@ -40,7 +40,7 @@ export default {
                   mainPic: 'firstPic',
                   imageryNum: '20+',
                   guideType: 'Мини гайд',
-                  mainImage: 'mainSecond.png',
+                  mainImage: 'main-second.png',
                   svgArray: [
                       {title: 'Закрытый чат со стилистом', path: 'telegram.svg' },
                       {title: 'Фото и видео с лайв-примерок', path: 'camera.svg' },
@@ -50,7 +50,7 @@ export default {
                         {title: 'Zara', description: 'Трикотажный Кардиган', path: 'jacket.png',},
                         {title: 'Zara', description: 'Брюки из вильвета', path: 'trousers.png',},
                         {title: 'H&M', description: 'Футболка Оверсайз', path: 'tshirt.png',},
-                        {title: 'Air Jordan', description: 'SE Multi-Color', path: 'sneakers.png',},
+                        {title: 'Air Jordan', description: 'SE Multi-Color', path: 'sneakers.png',},                        
                     ],
               },
               ],
@@ -63,19 +63,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.guides-wrapper {
-    background: #F9F9F9;
+    .guides-wrapper {
+         background: #F9F9F9;
     
-    .guides {
-        max-width: 1291px;
-        margin: 0px auto;
-        border-radius: 150px 0px 0px 0px;
-        padding: 160px 0px 80px;
+        .guides-list {
+            max-width: 1291px;
+            margin: 0px auto;
+            border-radius: 150px 0px 0px 0px;
+            padding: 80px 0px 80px;
+        
+
+        h2 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+        }
 
         
         .description {
             max-width: 600px;
             margin: 0px auto 60px;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
         }
     }
 }

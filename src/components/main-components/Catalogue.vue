@@ -1,17 +1,15 @@
 <template>
-
-<div class="catalogue">
+<div class="main-catalogue">
     <h2>Каталог гайдов</h2>
-        <div class="catalogueGrouper">
+        <div class="catalogue-list">
             <SubCatalogue v-for="item in catalogue"  :key="item.id" :item="item" />
         </div>
 </div>
-
 </template>
 
 <script>
 
-import SubCatalogue from './SubCatalogue'
+import SubCatalogue from '../sub-components/SubCatalogue'
 
 export default {
     name: 'Catalogue',
@@ -24,7 +22,7 @@ export default {
                 {   
                     id: 0,
                     guideType: 'Мини гайд',
-                    image: 'mainimg.png',
+                    image: 'main-catalogue.png',
                     title: 'Спортивный гайд',
                     description: '25+ готовых образов из масс-маркет брендов, с указанием артикулов, стоимости и ссылки на каждую вещь ( Zara, Uniqlo, H&M, Mango, ASOS, Stradivarius, La sarcelle и многие другие ).',
                     price: 800,
@@ -36,7 +34,7 @@ export default {
                 {
                     id: 1,
                     guideType: 'Миди гайд',
-                    image: 'mainimg.png',
+                    image: 'main-catalogue.png',
                     title: 'Спортивный гайд',
                     description: '25+ готовых образов из масс-маркет брендов, с указанием артикулов, стоимости и ссылки на каждую вещь ( Zara, Uniqlo, H&M, Mango, ASOS, Stradivarius, La sarcelle и многие другие ).',
                     price: 1200,
@@ -49,7 +47,7 @@ export default {
                 {
                     id: 2,
                     guideType: 'Мини гайд',
-                    image: 'mainimg.png',
+                    image: 'main-catalogue.png',
                     title: 'Спортивный гайд',
                     description: '25+ готовых образов из масс-маркет брендов, с указанием артикулов, стоимости и ссылки на каждую вещь ( Zara, Uniqlo, H&M, Mango, ASOS, Stradivarius, La sarcelle и многие другие ).',
                     price: 800,
@@ -61,7 +59,7 @@ export default {
                 {
                     id: 3,
                     guideType: 'Макси гайд',
-                    image: 'mainimg.png',
+                    image: 'main-catalogue.png',
                     title: 'Спортивный гайд',
                     description: '25+ готовых образов из масс-маркет брендов, с указанием артикулов, стоимости и ссылки на каждую вещь ( Zara, Uniqlo, H&M, Mango, ASOS, Stradivarius, La sarcelle и многие другие ).',
                     price: 1600,
@@ -79,7 +77,7 @@ export default {
 
 <style lang="scss" scoped>
 
-    .catalogue {
+    .main-catalogue {
             max-width: 1290px;
             margin: 0 auto;
 
@@ -88,13 +86,12 @@ export default {
                     font-size: 32px;
                     line-height: 32px;
                     text-align: center;
-                    color: #1D1D20;
                     margin: 0;
                     text-align: left;
                     margin-bottom: 50px;
                 }
 
-                .catalogueGrouper {
+                .catalogue-list {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -104,9 +101,9 @@ export default {
     }
 
     @media all and (max-width: 375px) {
-        .catalogue {
+        .main-catalogue {
             max-width: 360px;
-             margin-left: 26px;
+            
 
                 h2 {
                     font-size: 22px;
@@ -114,7 +111,7 @@ export default {
                     margin-bottom: 22px;
                 }
 
-                .catalogueGrouper {
+                .catalogue-list {
                     flex-direction: column;
                 }
     }
